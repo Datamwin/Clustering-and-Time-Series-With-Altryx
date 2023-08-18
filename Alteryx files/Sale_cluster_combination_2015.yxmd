@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Day" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Month" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Dry_Grocery" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Dairy" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Frozen_Food" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Meat" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Produce" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Floral" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Deli" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="Bakery" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+            <Field name="General_Merchandise" size="254" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\Clusters.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Clusters.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="255" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\Clusters.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Cluster" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\Clusters.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="126" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Day" selected="True" />
+            <Field field="Month" selected="True" />
+            <Field field="Year" selected="True" />
+            <Field field="Dry_Grocery" selected="True" />
+            <Field field="Dairy" selected="True" />
+            <Field field="Frozen_Food" selected="True" />
+            <Field field="Meat" selected="True" />
+            <Field field="Produce" selected="True" />
+            <Field field="Floral" selected="True" />
+            <Field field="Deli" selected="True" />
+            <Field field="Bakery" selected="True" />
+            <Field field="General_Merchandise" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="5" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="String" />
+            <Field name="Day" size="2" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="String" />
+            <Field name="Month" size="2" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="String" />
+            <Field name="Year" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Int16" />
+            <Field name="Dry_Grocery" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Double" />
+            <Field name="Dairy" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Double" />
+            <Field name="Frozen_Food" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Double" />
+            <Field name="Meat" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Double" />
+            <Field name="Produce" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Double" />
+            <Field name="Floral" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Double" />
+            <Field name="Deli" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Double" />
+            <Field name="Bakery" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Double" />
+            <Field name="General_Merchandise" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\storesalesdata.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="126" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Cluster" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="5" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\Clusters.xlsx|||`Sheet1$`" type="String" />
+            <Field name="Cluster" source="File: C:\Users\JETHRO\Desktop\Udacity\Udacity projects\Capstone Project\All Project Files\Clusters.xlsx|||`Sheet1$`" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="426" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Store" selected="True" input="Left_" />
+                <SelectField field="Left_Day" selected="True" input="Left_" />
+                <SelectField field="Left_Month" selected="True" input="Left_" />
+                <SelectField field="Left_Year" selected="True" input="Left_" />
+                <SelectField field="Left_Dry_Grocery" selected="True" input="Left_" />
+                <SelectField field="Left_Dairy" selected="True" input="Left_" />
+                <SelectField field="Left_Frozen_Food" selected="True" input="Left_" />
+                <SelectField field="Left_Meat" selected="True" input="Left_" />
+                <SelectField field="Left_Produce" selected="True" input="Left_" />
+                <SelectField field="Left_Floral" selected="True" input="Left_" />
+                <SelectField field="Left_Deli" selected="True" input="Left_" />
+                <SelectField field="Left_Bakery" selected="True" input="Left_" />
+                <SelectField field="Left_General_Merchandise" selected="True" input="Left_" />
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" input="Right_" />
+                <SelectField field="Right_Cluster" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="210" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Year</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-08-22 18:07:57</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2015</Operand>
+              <StartDate>2021-08-22 18:07:57</StartDate>
+              <EndDate>2021-08-22 18:07:57</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Year] = 2015</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Sale_cluster_combination_2015</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="2d571a5b-942f-4fcd-951b-4d54ae84b8f9" />
+      <Telemetry>
+        <PreviousWorkflowId value="6cc9a46d-dfb2-4730-833e-801aac63f397" />
+        <OriginWorkflowId value="2d571a5b-942f-4fcd-951b-4d54ae84b8f9" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
